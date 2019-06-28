@@ -7,3 +7,4 @@
     b.) DriverModule.ipynb
     c.) DriverModule.py - The module that reads the data from the dataset, creates model, and call train() on each datapoint, uses the trained model to perform prediction. 
     d.) TensorflowClass.py - Worker Module - Class implementing the ABC that encapsulates TF model.
+4. Phase1_Scala - Naive Linear Regression model - ML & DL
