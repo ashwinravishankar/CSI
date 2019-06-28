@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+	  <groupId>com.cambridgesemantics.anzograph</groupId>
+	  <artifactId>pom</artifactId>
+	  <version>1</version>
+  </parent>
+
+  <artifactId>udx</artifactId>
+  <version>1.0</version>
+  <name>udx</name>
+  <description>A simple foo.</description>
+
+  <dependencies>
+
+  	<dependency>
+  		<groupId>org.platanios</groupId>
+  		<artifactId>tensorflow_2.12</artifactId>
+  		<version>0.4.1</version>
+  		<classifier>darwin-cpu-x86_64</classifier>
+	</dependency>
+	<dependency>
+  		<groupId>org.platanios</groupId>
+  		<artifactId>tensorflow-jni_2.12</artifactId>
+  		<version>0.4.1</version>
+	</dependency>
+	
+	<dependency>
+    	<groupId>org.platanios</groupId>
+    	<artifactId>tensorflow-data_2.12</artifactId>
+    	<version>0.4.1</version>
+	</dependency>
+	
+	<dependency>
+    	<groupId>org.platanios</groupId>
+    	<artifactId>tensorflow-examples_2.12</artifactId>
+    	<version>0.4.1</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.apache.commons</groupId>
+	    <artifactId>commons-csv</artifactId>
+	    <version>1.7</version>
+	</dependency>
+
+	
+<!-- 	<dependency>
+  		<groupId>org.platanios</groupId>
+  		<artifactId>tensorflow_2.12</artifactId>
+  		<version>0.4.1</version>
+  		<classifier>javadoc</classifier>
+	</dependency> -->
+	
+    <dependency>
+        <groupId>com.cambridgesemantics.anzograph</groupId>
+        <artifactId>jvm</artifactId>
+    </dependency>
+    
+    
+  </dependencies>
+
+
+  <build>
+  	<plugins>
+  		<plugin>
+  			<groupId>net.alchim31.maven</groupId>
+          	<artifactId>scala-maven-plugin</artifactId>
+  		</plugin>
+  	</plugins>
+  </build>
+
+  </project>
